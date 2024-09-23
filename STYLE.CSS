@@ -1,0 +1,365 @@
+*{
+  margin: 0;
+  color: black;
+  font-family: 'Unbounded';
+ 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* From Uiverse.io by levxyca */ 
+button {
+  font-size: 1.5rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #fafafa;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+.about{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  width:70%;
+  background-color: darkgreen; 
+  padding: 7vh;
+  border: 1px;
+  border: 0.5vh solid white;
+  border-radius: 8vh;
+  gap: 10vh;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+   .about:hover{
+    box-shadow: 0 0 15vh red;
+    scale: 1.01;
+   }
+   .about img{
+    width: 35vh;
+    border-radius: 50px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+   .about img:hover{
+    scale: 1.15;
+    transform: rotate(-7deg);
+    box-shadow: 0 0 15vh rgba(red, green, blue, alpha);
+   }
+
+.about h1{
+margin-bottom:3vh ;
+font-size: 5vh;
+padding-bottom: 2vh;
+border-bottom: 0.3vh solid white;
+
+}
+hr{
+color: red;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+z-index: -1;
+height: 0.5vh;
+border: none;
+border-radius: 1.5vh;
+background-color: red;
+}
+
+.icon {
+width: 24px;
+height: 24px;
+transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+transform: scale(1.05);
+border-color: #fff9;
+}
+
+.button:hover .icon {
+transform: translate(4px);
+}
+
+.button:hover::before {
+animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+content: "";
+position: absolute;
+width: 100px;
+height: 100%;
+background-image: linear-gradient(
+  120deg,
+  rgba(255, 255, 255, 0) 30%,
+  rgba(255, 255, 255, 0.8),
+  rgba(255, 255, 255, 0) 70%
+);
+top: 0;
+left: -100px;
+opacity: 0.6;
+}
+
+
+#Qualifications,#skills{
+break-inside: auto;
+gap: 5vh;
+
+}
+.icon {
+width: 24px;
+height: 24px;
+transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+transform: scale(1.05);
+border-color: #fff9;
+}
+
+.button:hover .icon {
+transform: translate(4px);
+}
+
+.button:hover::before {
+animation: shine 1.5s ease-out infinite;
+}
+.button::before {
+content: "";
+position: absolute;
+width: 100px;
+height: 100%;
+background-image: linear-gradient(
+  120deg,
+  rgba(255, 255, 255, 0) 30%,
+  rgba(255, 255, 255, 0.8),
+  rgba(255, 255, 255, 0) 70%
+);
+top: 0;
+left: -100px;
+opacity: 0.6;
+}
+
+@keyframes shine {
+0% {
+  left: -100px;
+}
+
+60% {
+  left: 100%;
+}
+
+to {
+  left: 100%;
+}
+}
+table{
+text-align: center;
+transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav{
+  display: center;
+}
+#About, #Qualifications, #Experience, #Skills, #Contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  background-color: rgba(240, 248, 255, 0.199);
+  padding: 7vh;
+  border: 0.5vh solid rgba(255, 255, 255, 0.562);
+  border-radius: 8vh;
+  gap: 10vh;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about:hover{
+  box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+  scale: 1.02;
+}
+.about img{
+  width: 35vh;
+  border-radius: 100%;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about img:hover{
+  scale: 1.15;
+  transform: rotate(-7deg);
+  box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+}
+.about h1{
+  margin-bottom: 3vh;
+  font-size: 6vh;
+  padding-bottom: 2vh;
+  border-bottom: 0.3vh solid rgba(255, 255, 255, 0.562);
+}
+hr{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  z-index: -1;
+  height: 0.5vh;
+  border: none;
+  border-radius: 1.5vh;
+  background-color:  rgba(240, 248, 255, 0.404);;
+}
+#Qualifications, #Skills{
+  gap: 5vh;
+}
+#Skills table{
+  max-width: 40vh;
+  height: 50vh;
+}
+#Educational, #Professional, #Softskills, #Hardskills, #Interests{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 46%;
+  font-size: 1.8vh;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#Educational h1, #Professional h1, #Softskills h1, #Hardskills h1, #Interests h1{
+  scale: 1.02;
+}
+#Educational h1, #Professional h1, #Softskills h1, #Hardskills h1, #cont h1, #Experience, #Interests h1{
+  margin-bottom: 3vh;
+  font-size: 4vh;
+}
+table {
+  text-align: center;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-collapse: collapse;
+}
+#educationaltable, #professionaltable{
+  height: 55vh;
+}
+table:hover{
+  box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+}
+td,th,tr {
+  font-weight: 400;
+  padding: 3vh 3vh;
+  background-color: rgba(240, 248, 255, 0.062);
+  border: 0.5vh solid rgba(255, 255, 255, 0.562);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+th{
+  font-size: 2vh;
+}
+td {
+  font-weight: 300;
+  text-align: left;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+td li {
+  margin-left: -3vh;
+}
+th:hover,td:hover {
+  background-color: rgba(240, 248, 255, 0.295);
+}
+#cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+#cont h1{
+  font-size: 6vh;
+}
+#contform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input, textarea{
+  width: 60vh;
+  padding: 2vh;
+  border-radius: 1vh;
+  margin-bottom: 1vh;
+  background-color: rgba(240, 248, 255, 0.199);
+  border: 0.3vh solid rgba(255, 255, 255, 0.562);
+  border-collapse: collapse;
+  outline: none;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+appearance: none;
+margin: 0;
+}
+input:hover, textarea:hover{
+  background-color: rgba(240, 248, 255, 0.39);
+}
+::placeholder{
+  color:  rgba(255, 255, 255, 0.562);
+}
+textarea{
+  min-height: 10vh;
+  max-width: 60vh;
+  min-width: 60vh;
+}
+#contform button {
+  width: 18vh;
+  font-size: 2vh;
+  padding: 2vh;
+  border-radius: 1vh;
+  margin-bottom: 1vh;
+  background-color: rgba(240, 248, 255, 0.199);
+  border: 0.5vh solid #00fff2;
+  border-collapse: collapse;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-top: 3vh;
+  cursor: pointer;
+}
+#contform button:hover {
+  box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+  scale: 1.1;
+}
+#socials {
+  position: relative  ;
+  bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#socials #icons{
+  display: flex;
+  flex-direction: row;
+  gap: 10vh;
+}
+#socials #icons svg{
+  text-decoration: none;
+  width:6vh;
+  height: 6vh;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#socials #icons svg:hover{
+  filter: drop-shadow(0 0 15px aliceblue) ;
+  scale: 1.1;
+}
+@font-face {
+  font-family: 'Unbounded';
+  src: url(/assets/fonts/Unbounded-VariableFont_wght.ttf);
+}
+::selection{
+  background-color: transparent;
+  color: inherit;
+}
